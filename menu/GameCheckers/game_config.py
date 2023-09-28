@@ -2,6 +2,9 @@ import pygame as pg
 
 pg.init()
 
+cd_img = "./"
+img_back = "laminat.jpg"
+
 FPS = 10
 WINDOW_SIZE = (700, 700)
 BACKGROUND = (169, 169, 169)

@@ -15,12 +15,34 @@ class ExampleApp(QtWidgets.QMainWindow, menu.Ui_MainWindow):
 
         self.b_shah.clicked.connect(self.run_checkers)
         self.b_calculator.clicked.connect(self.run_calculator)
+        self.snake.clicked.connect(self.run_snake)
+        self.stricker.clicked.connect(self.run_stricker)
 
     def run_checkers(self):
         try:
             # Здесь вы указываете команду, которая запустит ваш другой проект
             # Например, если ваш проект находится в файле my_other_project.py:
             subprocess.run(["python3", "GameCheckers/main.py"])
+
+            # Если ваш проект находится в другом файле, замените "my_other_project.py" на соответствующий путьesds
+        except Exception as e:
+            print(f"Произошла ошибка при выполнении другого проекта: {e}")
+
+    def run_snake(self):
+        try:
+            # Здесь вы указываете команду, которая запустит ваш другой проект
+            # Например, если ваш проект находится в файле my_other_project.py:
+            subprocess.run(["python3", "snake/main.py"])
+
+            # Если ваш проект находится в другом файле, замените "my_other_project.py" на соответствующий путьesds
+        except Exception as e:
+            print(f"Произошла ошибка при выполнении другого проекта: {e}")
+
+    def run_stricker(self):
+        try:
+            # Здесь вы указываете команду, которая запустит ваш другой проект
+            # Например, если ваш проект находится в файле my_other_project.py:
+            subprocess.run(["python3", "stricker/main.py"])
 
             # Если ваш проект находится в другом файле, замените "my_other_project.py" на соответствующий путьesds
         except Exception as e:

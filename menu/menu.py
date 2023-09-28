@@ -14,39 +14,50 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(689, 186)
+        MainWindow.resize(780, 276)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setStyleSheet("\n"
-"")
+        self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
-        self.stackedWidget.setGeometry(QtCore.QRect(-10, 0, 701, 271))
+        self.stackedWidget.setGeometry(QtCore.QRect(-10, 0, 791, 281))
         self.stackedWidget.setStyleSheet("background-color: qlineargradient(spread:reflect, x1:0.55, y1:0.534636, x2:0.053, y2:0.983, stop:0 rgba(0, 111, 145, 255), stop:0.84689 rgba(86, 86, 174, 255));")
         self.stackedWidget.setObjectName("stackedWidget")
         self.p_start_window = QtWidgets.QWidget()
         self.p_start_window.setStyleSheet("")
         self.p_start_window.setObjectName("p_start_window")
         self.menu = QtWidgets.QLabel(self.p_start_window)
-        self.menu.setGeometry(QtCore.QRect(470, 10, 231, 31))
+        self.menu.setGeometry(QtCore.QRect(510, 10, 231, 31))
         self.menu.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font: 75 italic 24pt \"UnGraphic\";")
         self.menu.setObjectName("menu")
         self.b_shah = QtWidgets.QPushButton(self.p_start_window)
-        self.b_shah.setGeometry(QtCore.QRect(510, 110, 131, 41))
+        self.b_shah.setGeometry(QtCore.QRect(560, 110, 131, 41))
         self.b_shah.setStyleSheet("color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 122, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "font: 75 14pt \"UnDotum\";\n"
 "color: rgb(246, 245, 244);")
         self.b_shah.setObjectName("b_shah")
         self.b_calculator = QtWidgets.QPushButton(self.p_start_window)
-        self.b_calculator.setGeometry(QtCore.QRect(510, 50, 131, 41))
+        self.b_calculator.setGeometry(QtCore.QRect(560, 50, 131, 41))
         self.b_calculator.setStyleSheet("color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 122, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "font: 75 14pt \"UnDotum\";\n"
 "color: rgb(246, 245, 244);")
         self.b_calculator.setObjectName("b_calculator")
         self.calendar = QtWidgets.QCalendarWidget(self.p_start_window)
-        self.calendar.setGeometry(QtCore.QRect(10, 10, 441, 171))
+        self.calendar.setGeometry(QtCore.QRect(10, 10, 451, 261))
         self.calendar.setStyleSheet("background-color: rgb(98, 160, 234);")
         self.calendar.setObjectName("calendar")
+        self.snake = QtWidgets.QPushButton(self.p_start_window)
+        self.snake.setGeometry(QtCore.QRect(560, 170, 131, 41))
+        self.snake.setStyleSheet("color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 122, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"font: 75 14pt \"UnDotum\";\n"
+"color: rgb(246, 245, 244);")
+        self.snake.setObjectName("snake")
+        self.stricker = QtWidgets.QPushButton(self.p_start_window)
+        self.stricker.setGeometry(QtCore.QRect(560, 220, 131, 41))
+        self.stricker.setStyleSheet("color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(38, 122, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"font: 75 14pt \"UnDotum\";\n"
+"color: rgb(246, 245, 244);")
+        self.stricker.setObjectName("stricker")
         self.stackedWidget.addWidget(self.p_start_window)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -59,3 +70,5 @@ class Ui_MainWindow(object):
         self.menu.setText(_translate("MainWindow", "Главное меню"))
         self.b_shah.setText(_translate("MainWindow", "Шашки"))
         self.b_calculator.setText(_translate("MainWindow", "Калькулятор"))
+        self.snake.setText(_translate("MainWindow", "Змейка"))
+        self.stricker.setText(_translate("MainWindow", "Лови каплю"))

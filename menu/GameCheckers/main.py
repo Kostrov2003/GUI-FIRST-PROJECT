@@ -8,6 +8,12 @@ clock = pg.time.Clock()
 screen = pg.display.set_mode(WINDOW_SIZE)
 screen.fill(BACKGROUND)
 
+def __prepare_screen():
+    back_img = pg.image.load(cd_img + img_back)
+    screen.blit(back_img, (0, 0))
+
+__prepare_screen()
+
 n_lines = pg.Surface((CELL_QTY * CELL_SIZE, CELL_SIZE // 2)).convert_alpha()
 n_rows = pg.Surface((CELL_SIZE // 2, CELL_QTY * CELL_SIZE)).convert_alpha()
 fields = pg.Surface((CELL_QTY * CELL_SIZE, CELL_QTY * CELL_SIZE)).convert_alpha()
