@@ -14,7 +14,6 @@ class ExampleApp(QtWidgets.QMainWindow, menu.Ui_MainWindow):
         self.setupUi(self)  # Это нужно для инициализации нашего дизайна
 
         self.b_shah.clicked.connect(self.run_checkers)
-        self.b_back_start_window.clicked.connect(self.switch_start_window)
         self.b_calculator.clicked.connect(self.run_calculator)
 
     def run_checkers(self):

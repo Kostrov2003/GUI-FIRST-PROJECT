@@ -1,3 +1,7 @@
+import pygame as pg
+
+pg.init()
+
 FPS = 10
 WINDOW_SIZE = (700, 700)
 BACKGROUND = (169, 169, 169)
